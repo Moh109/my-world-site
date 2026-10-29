@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My World</title>
+  <meta name="description" content="My World is a personal, self-hosted dashboard that tracks one person's internship applications, classes and habits." />
+  <style>
+    :root { --bg: #f4f1ea; --card: #ffffff; --text: #2b2840; --muted: #6c6884; --accent: #6d5bd0; --line: rgba(43,40,64,.1); }
+    @media (prefers-color-scheme: dark) { :root { --bg: #141a3a; --card: #1f2142; --text: #eeedfb; --muted: #a7a5c6; --accent: #9a8bff; --line: rgba(255,255,255,.1); } }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 "Segoe UI", system-ui, -apple-system, sans-serif; }
+    main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 28px; }
+    h1 { margin: 0 0 4px; font-size: 32px; }
+    h2 { font-size: 18px; margin: 28px 0 8px; }
+    .muted { color: var(--muted); }
+    ul { padding-left: 20px; }
+    a { color: var(--accent); }
+    footer { margin-top: 24px; font-size: 14px; color: var(--muted); text-align: center; }
+  </style>
+</head>
+<body>
+<main>
+  <div class="card">
+    <h1>🏝️ My World</h1>
+    <p class="muted">A personal, self-hosted life dashboard for one person.</p>
+
+    <p>My World is a small 3D "town" that runs on its owner's own computer (and later a personal Arduino UNO Q board).
+      It keeps track of the owner's internship applications, class deadlines, to-dos, habits and workouts.</p>
+
+    <h2>What it does with Gmail</h2>
+    <ul>
+      <li>It requests <strong>read-only</strong> access to the owner's own Gmail (<code>gmail.readonly</code>).</li>
+      <li>It looks only at recruiting-related messages (application confirmations, assessments, interviews, offers, rejections) and reads the sender, subject, date and Gmail's short preview snippet.</li>
+      <li>From that, it updates the owner's own application tracker. It never sends, deletes, labels or changes any email.</li>
+      <li>Everything stays on the owner's own device. Nothing is sent to the developer or anyone else.</li>
+    </ul>
+
+    <h2>Who can use it</h2>
+    <p>It's a personal tool. It isn't offered as a service, and the only account that uses it is its owner's.</p>
+
+    <p><a href="privacy.html">Privacy policy</a></p>
+  </div>
+  <footer>My World · personal project · <a href="https://github.com/Moh109">github.com/Moh109</a></footer>
+</main>
+</body>
+</html>
